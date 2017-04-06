@@ -1,5 +1,6 @@
 package ru.javawebinar.topjava.model;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.EnumSet;
 import java.util.Set;

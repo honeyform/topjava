@@ -1,23 +1,54 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--
-        <bean class="ru.javawebinar.topjava.repository.mock.MockUserRepositoryImpl" id="mockUserRepository"/>
-
-        <bean class="ru.javawebinar.topjava.service.UserServiceImpl">
-            <property name="repository" ref="mockUserRepository"/>
-        </bean>
-    -->
 
     <context:annotation-config/>
-
     <context:component-scan base-package="ru.javawebinar.**.repository"/>
-
     <context:component-scan base-package="ru.javawebinar.**.service"/>
-
     <context:component-scan base-package="ru.javawebinar.**.web"/>
-
 </beans>
+
+
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+       <!--xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+       <!--xmlns:c="http://www.springframework.org/schema/c"-->
+       <!--xmlns:context="http://www.springframework.org/schema/context"-->
+       <!--xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd-->
+       <!--http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">-->
+
+    <!--&lt;!&ndash;-->
+        <!--<bean class="ru.javawebinar.topjava.repository.mock.MockUserRepositoryImpl" id="mockUserRepository"/>-->
+
+        <!--<bean class="ru.javawebinar.topjava.service.UserServiceImpl">-->
+            <!--<property name="repository" ref="mockUserRepository"/>-->
+        <!--</bean>-->
+    <!--&ndash;&gt;-->
+
+
+
+    <!--&lt;!&ndash;<context:annotation-config/>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<context:component-scan base-package="ru.javawebinar.**.repository"/>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<context:component-scan base-package="ru.javawebinar.**.service"/>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<context:component-scan base-package="ru.javawebinar.**.web"/>&ndash;&gt;-->
+
+
+    <!--<bean id="inMemoryMealRepository" class="ru.javawebinar.topjava.repository.mock.InMemoryMealRepositoryImpl"/>-->
+
+    <!--<bean id="inMemoryUserRepository" class="ru.javawebinar.topjava.repository.mock.InMemoryUserRepositoryImpl"/>-->
+
+    <!--<bean id="mealService" class="ru.javawebinar.topjava.service.MealServiceImpl"/>-->
+
+    <!--<bean id="userService" class="ru.javawebinar.topjava.service.UserServiceImpl"/>-->
+
+    <!--<bean id="mealRestController" class="ru.javawebinar.topjava.web.meal.MealRestController"-->
+          <!--c:_0-ref="mealService"/>-->
+
+<!--</beans>-->

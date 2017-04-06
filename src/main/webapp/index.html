@@ -7,9 +7,17 @@
 <body>
 <h3>Проект <a href="https://github.com/JavaWebinar/topjava10" target="_blank">Java Enterprise (Topjava)</a></h3>
 <hr>
-<ul>
-    <li><a href="users">User List</a></li>
-    <li><a href="meals">Meal List</a></li>
-</ul>
+
+<div align="left" style="font-size: 16px;">
+    <b>Выберите пользователя:</b><br><br>
+    <form action="meals" method="post">
+        <input type="radio" name="userId" value="1" checked="checked">User №1<br><br>
+        <input type="radio" name="userId" value="2">User №2<br><br><br>
+
+        <input type="button" value="User List" style="font-size: 24px" onclick="window.location='users';"/><br><br>
+        <input type="submit" value="Meal List" style="font-size: 24px" onclick="window.location='meals';"/>
+    </form>
+</div>
+
 </body>
 </html>
